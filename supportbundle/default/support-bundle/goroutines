@@ -1,0 +1,1303 @@
+goroutine 448 [running]:
+runtime/pprof.writeGoroutineStacks(0x1466b80, 0xc4203e9490, 0xd0, 0xd0)
+	/usr/local/go/src/runtime/pprof/pprof.go:650 +0xa7
+runtime/pprof.writeGoroutine(0x1466b80, 0xc4203e9490, 0x2, 0x30, 0xc4202c57b8)
+	/usr/local/go/src/runtime/pprof/pprof.go:639 +0x44
+runtime/pprof.(*Profile).WriteTo(0x1c70800, 0x1466b80, 0xc4203e9490, 0x2, 0x0, 0xc4202c5928)
+	/usr/local/go/src/runtime/pprof/pprof.go:310 +0x3e4
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/supportbundle/producers.(*SupportBundle).Goroutines(0xc4201880e0, 0x14810c0, 0xc4201fec00, 0xc4204a8480, 0xc42052c000, 0x1341580, 0xc42013ea80)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/supportbundle/producers/goroutines.go:17 +0xf0
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/supportbundle/producers.(*SupportBundle).Goroutines-fm(0x14810c0, 0xc4201fec00, 0xc4207d4210, 0xc4202c5998, 0x42b099, 0xc42052c030)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/supportbundle/planners/goroutines.go:12 +0x3e
+github.com/replicatedcom/support-bundle/pkg/collect/plans.(*StreamSource).Exec.func1(0x14810c0, 0xc4201fec00, 0xc4202dc0a0, 0x72, 0x96)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plans/stream_source.go:53 +0x42
+github.com/replicatedcom/support-bundle/pkg/collect/plans.(*StreamsSource).Exec(0xc4204ee480, 0x14810c0, 0xc4201fec00, 0xc42020e580, 0x9, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plans/streams_source.go:83 +0x298
+github.com/replicatedcom/support-bundle/pkg/collect/plans.(*StreamSource).Exec(0xc4204d6900, 0x14810c0, 0xc4201fec00, 0xc42020e580, 0x9, 0x1, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plans/stream_source.go:59 +0x23b
+github.com/replicatedcom/support-bundle/pkg/collect/bundle.exec.func1(0xc4201fec60, 0x14810c0, 0xc4201fec00, 0xc42020e580, 0x9, 0x146b7e0, 0xc4204d6900)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/exec.go:73 +0x69
+created by github.com/replicatedcom/support-bundle/pkg/collect/bundle.exec
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/exec.go:72 +0x184
+
+goroutine 1 [chan receive]:
+github.com/replicatedcom/support-bundle/pkg/collect/bundle.exec(0x14810c0, 0xc4201fe960, 0xc42020e580, 0x9, 0xc420358ae0, 0x2, 0x2, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/exec.go:92 +0x317
+github.com/replicatedcom/support-bundle/pkg/collect/bundle.Exec(0x14810c0, 0xc4201829c0, 0xc42020e580, 0x9, 0xc420092800, 0x34, 0x40, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/exec.go:55 +0x658
+github.com/replicatedcom/support-bundle/pkg/collect/bundle.Generate(0xc420092800, 0x34, 0x40, 0xdf8475800, 0x1358f00, 0x14, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/generate.go:44 +0x22e
+github.com/replicatedcom/support-bundle/pkg/collect/lifecycle.(*GenerateTask).Execute(0xc42020e54d, 0xc4200e6b00, 0xc4203f2501, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/lifecycle/generate.go:17 +0x66
+github.com/replicatedcom/support-bundle/pkg/collect/lifecycle.(*Lifecycle).Run(0xc4200e6b00, 0x1c74ee0, 0x3)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/lifecycle/lifecycle.go:67 +0x7e
+github.com/replicatedcom/support-bundle/pkg/collect/cli.(*Cli).Generate(0x1ca2d60, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1358f00, 0x14, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/cli/generate.go:141 +0x49a
+github.com/replicatedcom/support-bundle/cmd/support-bundle/commands.NewGenerateCommand.func1(0xc420256000, 0xc4203ed100, 0x0, 0x1, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/cmd/support-bundle/commands/generate.go:16 +0x60
+github.com/replicatedcom/support-bundle/vendor/github.com/spf13/cobra.(*Command).execute(0xc420256000, 0xc4203ed0e0, 0x1, 0x1, 0xc420256000, 0xc4203ed0e0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/spf13/cobra/command.go:762 +0x468
+github.com/replicatedcom/support-bundle/vendor/github.com/spf13/cobra.(*Command).ExecuteC(0xc420179400, 0xc420179400, 0xc4203ed090, 0xc420184460)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/spf13/cobra/command.go:852 +0x30a
+github.com/replicatedcom/support-bundle/vendor/github.com/spf13/cobra.(*Command).Execute(0xc420179400, 0xc420179400, 0xc4200a0058)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/spf13/cobra/command.go:800 +0x2b
+main.main()
+	/go/src/github.com/replicatedcom/support-bundle/cmd/support-bundle/main.go:12 +0x49
+
+goroutine 5 [chan receive]:
+github.com/replicatedcom/support-bundle/vendor/k8s.io/klog.(*loggingT).flushDaemon(0x1c847c0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/k8s.io/klog/klog.go:941 +0x8b
+created by github.com/replicatedcom/support-bundle/vendor/k8s.io/klog.init.0
+	/go/src/github.com/replicatedcom/support-bundle/vendor/k8s.io/klog/klog.go:403 +0x69
+
+goroutine 501 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4203d57c4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc420149a00, 0x1466b40, 0xc4203b5500, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc4202a2a20)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 22 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89edd2f00, 0x72, 0xc4200659a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420141018, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420141018, 0xc4203f5000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420141000, 0xc4203f5000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420141000, 0xc4203f5000, 0x1000, 0x1000, 0x454a60, 0xc420297680, 0x4)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc4202362d0, 0xc4203f5000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203eec60, 0xc4203f5000, 0x1000, 0x1000, 0xc420065b98, 0x405195, 0xc4200a0600)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4203ac000)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4203ac000, 0x1, 0x0, 0x0, 0x0, 0xc4204cf200, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203eec60)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 23 [select]:
+net/http.(*persistConn).writeLoop(0xc4203eec60)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 436 [select]:
+io.(*pipe).Write(0xc4202087d0, 0xc420508808, 0x2000, 0x7801, 0x800, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:87 +0x1e3
+io.(*PipeWriter).Write(0xc42020a158, 0xc420508008, 0x2800, 0x8001, 0x2808, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:153 +0x4c
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x1468760, 0xc42020a158, 0x1468760, 0xc42020a168, 0x1466b20, 0xc420638060, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:174 +0x3f1
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func3(0xc42020a158, 0xc42020a168, 0xc420364240)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:84 +0x70
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:82 +0x942
+
+goroutine 345 [select]:
+net/http.(*persistConn).roundTrip(0xc42025e5a0, 0xc4204abe90, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc4207da700, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc4207da700, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc4201885c8, 0x0, 0xc4207b9850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc4207da700, 0x0, 0x0, 0x0, 0xc4201885c8, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc4207da700, 0xc420040048, 0xc4207da700, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc4207da600, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207da600, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42025d360, 0x4c, 0xc4207b9db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42025d360, 0x4c, 0xc4207b9db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420144780, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420144780, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 514 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4207dc7c4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc42060ff00, 0x1466b40, 0xc4206266c0, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc42025e240)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 504 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4207e0fc4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc420149c00, 0x1466b40, 0xc4203b5540, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc4202a2b40)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 489 [select]:
+net/http.(*persistConn).writeLoop(0xc4203ab440)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 491 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9bfd0, 0x72, 0xc4205d89a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc4204f1d18, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc4204f1d18, 0xc420737000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc4204f1d00, 0xc420737000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc4204f1d00, 0xc420737000, 0x1000, 0x1000, 0xc4201f3228, 0xc420230d00, 0x1)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42020a738, 0xc420737000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203ab7a0, 0xc420737000, 0x1000, 0x1000, 0x40, 0xc4205d8b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4203ace40)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4203ace40, 0x1, 0xc4208017a0, 0xc4203d7480, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203ab7a0)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 420 [select]:
+net/http.(*persistConn).writeLoop(0xc4203ef8c0)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 283 [select]:
+net/http.(*persistConn).roundTrip(0xc4203abb00, 0xc420241020, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42060fd00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42060fd00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a778, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42060fd00, 0x0, 0x0, 0x0, 0xc42020a778, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42060fd00, 0xc420040048, 0xc42060fd00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42060fc00, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42060fc00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc420704500, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc420704500, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420522080, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420522080, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 340 [select]:
+net/http.(*persistConn).roundTrip(0xc4203330e0, 0xc42052b5c0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149400, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149400, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e2d8, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149400, 0x0, 0x0, 0x0, 0xc42000e2d8, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149400, 0xc420040048, 0xc420149400, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149300, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149300, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e4b0, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e4b0, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420144680, 0x40, 0x10001, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420144680, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 339 [select]:
+net/http.(*persistConn).roundTrip(0xc420333c20, 0xc42052b740, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149600, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149600, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e300, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149600, 0x0, 0x0, 0x0, 0xc42000e300, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149600, 0xc420040048, 0xc420149600, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149500, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149500, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e500, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e500, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420144640, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420144640, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 473 [select]:
+net/http.(*persistConn).writeLoop(0xc420332120)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 457 [runnable]:
+net/http.(*persistConn).readLoop(0xc4203ef7a0)
+	/usr/local/go/src/net/http/transport.go:1590 +0xd2
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 494 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9bc90, 0x72, 0xc4207b89a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc4207be418, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc4207be418, 0xc420751000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc4207be400, 0xc420751000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc4207be400, 0xc420751000, 0x1000, 0x1000, 0xc4201f3ca8, 0xc420207500, 0x1)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42020a788, 0xc420751000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203abb00, 0xc420751000, 0x1000, 0x1000, 0x42, 0xc4207b8b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4203ad980)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4203ad980, 0x1, 0xc420801860, 0xc4203ba480, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203abb00)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 492 [select]:
+net/http.(*persistConn).writeLoop(0xc4203ab7a0)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 449 [select]:
+github.com/replicatedcom/support-bundle/pkg/collect/bundle.exec.func2(0xc4201fec60, 0xc420754b40, 0x14810c0, 0xc4201fe960, 0xc42020e580, 0x9, 0x146b7e0, 0xc4204d6900)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/exec.go:77 +0x11b
+created by github.com/replicatedcom/support-bundle/pkg/collect/bundle.exec
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/exec.go:76 +0x204
+
+goroutine 455 [select]:
+io.(*pipe).Write(0xc420232d70, 0xc4208d2808, 0x2000, 0x7801, 0x800, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:87 +0x1e3
+io.(*PipeWriter).Write(0xc420188558, 0xc4208d2008, 0x2800, 0x8001, 0x2808, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:153 +0x4c
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x1468760, 0xc420188558, 0x1468760, 0xc420188578, 0x1466b20, 0xc4206602a0, 0x17, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:174 +0x3f1
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func3(0xc420188558, 0xc420188578, 0xc42023e500)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:84 +0x70
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:82 +0x942
+
+goroutine 520 [runnable]:
+net/http.(*persistConn).readLoop(0xc42025e5a0)
+	/usr/local/go/src/net/http/transport.go:1590 +0xd2
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 360 [runnable]:
+net/url.url.Values.Set(...)
+	/usr/local/go/src/net/url/url.go:813
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc4205220c0, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:14 +0x438
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc4205220c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 521 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4200517c4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc4207da700, 0x1466b40, 0xc420626780, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc42025e5a0)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 373 [select]:
+net/http.(*Transport).getConn(0xc4204343c0, 0xc42049b380, 0x0, 0x134723c, 0x4, 0xc4200b0a80, 0x17, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:962 +0x558
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc4207daf00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:409 +0x632
+net/http.send(0xc4207daf00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0x1, 0x0, 0xc4201886e8, 0xc4207daf00)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc4207daf00, 0x0, 0x0, 0x0, 0xc4201886e8, 0x0, 0x1, 0x41fd08)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc4207daf00, 0xc420040048, 0xc4207daf00, 0x42851e)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc4207dae00, 0x1360c1c, 0xc42054aaa8, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207dae00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42025d4a0, 0x4c, 0xc42054adb8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42025d4a0, 0x4c, 0xc42054adb8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a7c0, 0x40, 0xc420010001, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a7c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 371 [runnable]:
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc420704000, 0x4c, 0xc420282db8, 0x0, 0x2, 0x2, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:68 +0x1ab
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a680, 0x40, 0x10001, 0x0, 0xc4203b66e8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a680, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 382 [select]:
+io.(*pipe).Write(0xc420232690, 0xc420708a08, 0x1e00, 0x7601, 0xa00, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:87 +0x1e3
+io.(*PipeWriter).Write(0xc4201883b0, 0xc420708008, 0x2800, 0x8001, 0x2808, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:153 +0x4c
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x1468760, 0xc4201883b0, 0x1468760, 0xc4201883c0, 0x1466b20, 0xc42002e3c0, 0xc4200d3450, 0x0, 0x458841)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:174 +0x3f1
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func3(0xc4201883b0, 0xc4201883c0, 0xc42074a940)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:84 +0x70
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:82 +0x942
+
+goroutine 485 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9b910, 0x72, 0xc4204c19a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc4204f1318, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc4204f1318, 0xc4206ed000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc4204f1300, 0xc4206ed000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc4204f1300, 0xc4206ed000, 0x1000, 0x1000, 0xc4204c1ab8, 0x41fc96, 0xc420801560)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42020a680, 0xc4206ed000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203ab200, 0xc4206ed000, 0x1000, 0x1000, 0x3a, 0xc4204c1b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4201ff860)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4201ff860, 0x1, 0xc420801560, 0xc4203d3480, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203ab200)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 522 [runnable]:
+net/http.(*Transport).dialConn(0xc4204343c0, 0x1481080, 0xc420040048, 0x0, 0x134723c, 0x4, 0xc420317940, 0x17, 0x0, 0x0, ...)
+	/usr/local/go/src/net/http/transport.go:1096 +0x55
+net/http.(*Transport).getConn.func4(0xc4204343c0, 0x1481080, 0xc420040048, 0xc420334ff0, 0xc420801b60)
+	/usr/local/go/src/net/http/transport.go:957 +0x78
+created by net/http.(*Transport).getConn
+	/usr/local/go/src/net/http/transport.go:956 +0x363
+
+goroutine 418 [runnable]:
+net/url.url.Values.Set(...)
+	/usr/local/go/src/net/url/url.go:813
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420144040, 0x40, 0x10001, 0x0, 0xc4200d06e8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:14 +0x438
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420144040, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 462 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4207f67c4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc4207dad00, 0x1466b40, 0xc420544040, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc4203ef9e0)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 278 [select]:
+net/http.(*persistConn).roundTrip(0xc42025e240, 0xc420334000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42060ff00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42060ff00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a7d0, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42060ff00, 0x0, 0x0, 0x0, 0xc42020a7d0, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42060ff00, 0xc420040048, 0xc42060ff00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42060fe00, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42060fe00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc420704550, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc420704550, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420522040, 0x40, 0xc420010001, 0x0, 0x458841)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420522040, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 297 [select]:
+net/http.(*persistConn).roundTrip(0xc420332120, 0xc42052b440, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149200, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149200, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e2b0, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149200, 0x0, 0x0, 0x0, 0xc42000e2b0, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149200, 0xc420040048, 0xc420149200, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149100, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149100, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e460, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e460, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a5c0, 0x40, 0xc420010001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a5c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 296 [select]:
+net/http.(*persistConn).roundTrip(0xc4202a3320, 0xc42052bd70, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149e00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149e00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e428, 0x75, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149e00, 0x0, 0x0, 0x0, 0xc42000e428, 0x0, 0x1, 0x41fc96)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149e00, 0xc420040048, 0xc420149e00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149d00, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149d00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e640, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e640, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a580, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a580, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 295 [select]:
+net/http.(*persistConn).roundTrip(0xc4203eec60, 0xc42052b320, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149000, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149000, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e290, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149000, 0x0, 0x0, 0x0, 0xc42000e290, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149000, 0xc420040048, 0xc420149000, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420148f00, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420148f00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e370, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e370, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a540, 0x40, 0x10001, 0x0, 0x458841)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a540, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 294 [select]:
+net/http.(*persistConn).roundTrip(0xc4203ab200, 0xc420023cb0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42060f500, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42060f500, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a670, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42060f500, 0x0, 0x0, 0x0, 0xc42020a670, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42060f500, 0xc420040048, 0xc42060f500, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42060f400, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42060f400, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc420704410, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc420704410, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a500, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a500, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 486 [select]:
+net/http.(*persistConn).writeLoop(0xc4203ab200)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 488 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9bbc0, 0x72, 0xc4202809a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc4204f1798, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc4204f1798, 0xc42065d000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc4204f1780, 0xc42065d000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc4204f1780, 0xc42065d000, 0x1000, 0x1000, 0xc420280ab8, 0x41fc96, 0xc4208016e0)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42020a6d0, 0xc42065d000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203ab440, 0xc42065d000, 0x1000, 0x1000, 0x3e, 0xc420280b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4203ac7e0)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4203ac7e0, 0x1, 0xc4208016e0, 0xc4200d1c80, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203ab440)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 419 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9ba20, 0x72, 0xc4205dc9a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc42023d218, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc42023d218, 0xc4204c8000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc42023d200, 0xc4204c8000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc42023d200, 0xc4204c8000, 0x1000, 0x1000, 0xc420298f28, 0xc420230e00, 0x1)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc420236288, 0xc4204c8000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203ef8c0, 0xc4204c8000, 0x1000, 0x1000, 0x1b, 0xc4205dcb98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc42052cf60)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc42052cf60, 0x1, 0xc4200a09c0, 0xc4207f8480, 0x300000002, 0xc420298f00, 0xc4207f8408)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203ef8c0)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 478 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9c8c0, 0x72, 0xc4205d99a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420527a98, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420527a98, 0xc42074e000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420527a80, 0xc42074e000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420527a80, 0xc42074e000, 0x1000, 0x1000, 0xc4205d9ab8, 0x41fc96, 0xc4208c4f00)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42000e308, 0xc42074e000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc420333c20, 0xc42074e000, 0x1000, 0x1000, 0xf3, 0xc4205d9b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4206396e0)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4206396e0, 0x1, 0xc4208c4f00, 0xc4203b7c80, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc420333c20)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 476 [select]:
+net/http.(*persistConn).writeLoop(0xc4203330e0)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 475 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89edd2610, 0x72, 0xc4202c69a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420527698, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420527698, 0xc42074c000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420527680, 0xc42074c000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420527680, 0xc42074c000, 0x1000, 0x1000, 0xc4202c6ab8, 0x41fc96, 0xc4208c4e40)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42000e2e0, 0xc42074c000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203330e0, 0xc42074c000, 0x1000, 0x1000, 0x27, 0xc4202c6b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc420639380)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc420639380, 0x1, 0xc4208c4e40, 0xc420052480, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203330e0)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 461 [runnable]:
+net/http.(*persistConn).readLoop(0xc4203ef9e0)
+	/usr/local/go/src/net/http/transport.go:1590 +0xd2
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 463 [runnable]:
+net/http.(*Transport).dialConn(0xc4204343c0, 0x1481080, 0xc420040048, 0x0, 0x134723c, 0x4, 0xc4200b0a80, 0x17, 0x0, 0x0, ...)
+	/usr/local/go/src/net/http/transport.go:1096 +0x55
+net/http.(*Transport).getConn.func4(0xc4204343c0, 0x1481080, 0xc420040048, 0xc42049b410, 0xc420776240)
+	/usr/local/go/src/net/http/transport.go:957 +0x78
+created by net/http.(*Transport).getConn
+	/usr/local/go/src/net/http/transport.go:956 +0x363
+
+goroutine 277 [select]:
+net/http.(*persistConn).roundTrip(0xc42025e360, 0xc420334450, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42077e200, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42077e200, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a838, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42077e200, 0x0, 0x0, 0x0, 0xc42020a838, 0x0, 0x1, 0x22)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42077e200, 0xc420040048, 0xc42077e200, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42077e100, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42077e100, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc4207045a0, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207045a0, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420522000, 0x40, 0xc420010001, 0xc420188001, 0x8b42e9)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420522000, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 442 [select]:
+net/http.(*persistConn).roundTrip(0xc4203ef8c0, 0xc4202016e0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc4207dab00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc4207dab00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc4201886a0, 0x0, 0xc4205dc850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc4207dab00, 0x0, 0x0, 0x0, 0xc4201886a0, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc4207dab00, 0xc420040048, 0xc4207dab00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc4207daa00, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207daa00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42025d400, 0x4c, 0xc4205dcdb8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42025d400, 0x4c, 0xc4205dcdb8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420522180, 0x40, 0x10001, 0x0, 0x458841)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420522180, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 472 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89edd2d60, 0x72, 0xc4207209a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420527298, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420527298, 0xc420734000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420527280, 0xc420734000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420527280, 0xc420734000, 0x1000, 0x1000, 0xc420720ab8, 0x41fc96, 0xc4208c4d80)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42000e2b8, 0xc420734000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc420332120, 0xc420734000, 0x1000, 0x1000, 0x25, 0xc420720b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4206390e0)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4206390e0, 0x1, 0xc4208c4d80, 0xc4200cb480, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc420332120)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 498 [select]:
+net/http.(*persistConn).writeLoop(0xc4202a2900)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 303 [runnable]:
+net/url.url.Values.Set(...)
+	/usr/local/go/src/net/url/url.go:813
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a640, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:14 +0x438
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a640, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 332 [select]:
+net/http.(*persistConn).roundTrip(0xc4202a2a20, 0xc42052ba40, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149a00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149a00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e3c8, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149a00, 0x0, 0x0, 0x0, 0xc42000e3c8, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149a00, 0xc420040048, 0xc420149a00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149900, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149900, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e5a0, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e5a0, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420144600, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420144600, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 507 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4207e17c4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc420149e00, 0x1466b40, 0xc4203b5580, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc4202a3320)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 506 [runnable]:
+net/http.(*persistConn).readLoop(0xc4202a3320)
+	/usr/local/go/src/net/http/transport.go:1590 +0xd2
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 445 [select]:
+io.(*pipe).Write(0xc420209040, 0xc4208c8608, 0x2200, 0x7a01, 0x600, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:87 +0x1e3
+io.(*PipeWriter).Write(0xc42020a3a0, 0xc4208c8008, 0x2800, 0x8001, 0x2808, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:153 +0x4c
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x1468760, 0xc42020a3a0, 0x1468760, 0xc42020a440, 0x1466b20, 0xc420183080, 0xc420234b50, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:174 +0x3f1
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func3(0xc42020a3a0, 0xc42020a440, 0xc4201c98e0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:84 +0x70
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:82 +0x942
+
+goroutine 384 [select]:
+io.(*pipe).Write(0xc420232a00, 0xc420712808, 0x2000, 0x7801, 0x800, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:87 +0x1e3
+io.(*PipeWriter).Write(0xc4201883d0, 0xc420712008, 0x2800, 0x8001, 0x2808, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:153 +0x4c
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x1468760, 0xc4201883d0, 0x1468760, 0xc4201883e8, 0x1466b20, 0xc42052cba0, 0x0, 0x0, 0xc4203d16e8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:174 +0x3f1
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func3(0xc4201883d0, 0xc4201883e8, 0xc42074ac80)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:84 +0x70
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:82 +0x942
+
+goroutine 503 [runnable]:
+net/http.(*persistConn).readLoop(0xc4202a2b40)
+	/usr/local/go/src/net/http/transport.go:1590 +0xd2
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 452 [select]:
+net/http.(*persistConn).roundTrip(0xc4203ef7a0, 0xc420200b70, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc4207da900, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc4207da900, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc420188678, 0x0, 0xc4205dc850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc4207da900, 0x0, 0x0, 0x0, 0xc420188678, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc4207da900, 0xc420040048, 0xc4207da900, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc4207da800, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207da800, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42025d3b0, 0x4c, 0xc4205dcdb8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42025d3b0, 0x4c, 0xc4205dcdb8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a8c0, 0x40, 0x10001, 0x0, 0xc4207e36e8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a8c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 479 [select]:
+net/http.(*persistConn).writeLoop(0xc420333c20)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 307 [select]:
+net/http.(*persistConn).roundTrip(0xc42015c360, 0xc420023aa0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42060f300, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42060f300, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a610, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42060f300, 0x0, 0x0, 0x0, 0xc42020a610, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42060f300, 0xc420040048, 0xc42060f300, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42060f100, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42060f100, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc4207043c0, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207043c0, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42057a1c0, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42057a1c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 298 [runnable]:
+net/url.url.Values.Set(...)
+	/usr/local/go/src/net/url/url.go:813
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a600, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:14 +0x438
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a600, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 293 [select]:
+net/http.(*persistConn).roundTrip(0xc4203ab440, 0xc420023ec0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42060f800, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42060f800, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a6c0, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42060f800, 0x0, 0x0, 0x0, 0xc42020a6c0, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42060f800, 0xc420040048, 0xc42060f800, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42060f700, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42060f700, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc420704460, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc420704460, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a3c0, 0x40, 0xc420010001, 0xc42000e201, 0x8b42e9)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a3c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 175 [select]:
+net/http.(*persistConn).roundTrip(0xc4203ab7a0, 0xc4202404b0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42060fb00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42060fb00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a728, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42060fb00, 0x0, 0x0, 0x0, 0xc42020a728, 0x0, 0x1, 0x8)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42060fb00, 0xc420040048, 0xc42060fb00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42060f900, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42060f900, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc4207044b0, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207044b0, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a380, 0x40, 0x10001, 0xc420236238, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a380, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 516 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9c310, 0x72, 0xc4202819a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc4207bef18, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc4207bef18, 0xc420593000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc4207bef00, 0xc420593000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc4207bef00, 0xc420593000, 0x1000, 0x1000, 0xc4206b44a8, 0xc420544840, 0x1)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42020a848, 0xc420593000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc42025e360, 0xc420593000, 0x1000, 0x1000, 0x43, 0xc420281b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4205940c0)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4205940c0, 0x1, 0xc4208018c0, 0xc420053480, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc42025e360)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 350 [runnable]:
+net/url.url.Values.Set(...)
+	/usr/local/go/src/net/url/url.go:813
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc4201447c0, 0x40, 0xc420010001, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:14 +0x438
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc4201447c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 497 [runnable]:
+net/http.(*persistConn).readLoop(0xc42025e240)
+	/usr/local/go/src/net/http/transport.go:1590 +0xd2
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 481 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89edd2540, 0x72, 0xc4207239a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420527f18, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420527f18, 0xc420590000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420527f00, 0xc420590000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420527f00, 0xc420590000, 0x1000, 0x1000, 0xc420723ab8, 0x41fc96, 0xc4208c4fc0)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42000e340, 0xc420590000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4202a2900, 0xc420590000, 0x1000, 0x1000, 0xf3, 0xc420723b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc420639ce0)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc420639ce0, 0x1, 0xc4208c4fc0, 0xc420052c80, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4202a2900)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 380 [select]:
+net/http.(*Transport).getConn(0xc4204343c0, 0xc420334fc0, 0x0, 0x134723c, 0x4, 0xc420317940, 0x17, 0x0, 0x0, 0x60000c420093400)
+	/usr/local/go/src/net/http/transport.go:962 +0x558
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42077e600, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:409 +0x632
+net/http.send(0xc42077e600, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0x1, 0x0, 0xc42020a910, 0xc42077e600)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42077e600, 0x0, 0x0, 0x0, 0xc42020a910, 0x0, 0x1, 0x41fd08)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42077e600, 0xc420040048, 0xc42077e600, 0x42851e)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42077e400, 0x1360c1c, 0xc420645aa8, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42077e400, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc4207045f0, 0x4c, 0xc420645db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207045f0, 0x4c, 0xc420645db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a880, 0x40, 0x10001, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a880, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 517 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4207dcfc4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc42077e200, 0x1466b40, 0xc420626700, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc42025e360)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 458 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4207e37c4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc4207da900, 0x1466b40, 0xc420544000, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc4203ef7a0)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 259 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9adb0, 0x72, 0xc4205479a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420531c18, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420531c18, 0xc42059f000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420531c00, 0xc42059f000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420531c00, 0xc42059f000, 0x1000, 0x1000, 0x454a60, 0xc420297c80, 0x4)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42000e678, 0xc42059f000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc42015c360, 0xc42059f000, 0x1000, 0x1000, 0xc420547b98, 0x405195, 0xc42057fce0)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc420661860)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc420661860, 0x1, 0x0, 0x0, 0x0, 0xc4200a0720, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc42015c360)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 260 [select]:
+net/http.(*persistConn).writeLoop(0xc42015c360)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 400 [select]:
+net/http.(*persistConn).roundTrip(0xc4203ef9e0, 0xc420201f50, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc4207dad00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc4207dad00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0x1, 0x0, 0xc4201886c0, 0xc4207dad00)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc4207dad00, 0x0, 0x0, 0x0, 0xc4201886c0, 0x0, 0x1, 0x41fd08)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc4207dad00, 0xc420040048, 0xc4207dad00, 0x42851e)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc4207dac00, 0x1360c1c, 0xc42054aaa8, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207dac00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42025d450, 0x4c, 0xc42054adb8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42025d450, 0x4c, 0xc42054adb8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420522100, 0x40, 0x10001, 0x0, 0xc4203b96e8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420522100, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 308 [select]:
+net/http.(*persistConn).roundTrip(0xc4202a2b40, 0xc42052bbc0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149c00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149c00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e3f8, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149c00, 0x0, 0x0, 0x0, 0xc42000e3f8, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149c00, 0xc420040048, 0xc420149c00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149b00, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149b00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e5f0, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e5f0, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42057a200, 0x40, 0xc420010001, 0xc4201880c0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42057a200, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 313 [select]:
+net/http.(*persistConn).roundTrip(0xc4202a2900, 0xc42052b8c0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149800, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149800, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e338, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149800, 0x0, 0x0, 0x0, 0xc42000e338, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149800, 0xc420040048, 0xc420149800, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149700, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149700, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e550, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e550, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42057a240, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42057a240, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 368 [runnable]:
+net/url.url.Values.Set(...)
+	/usr/local/go/src/net/url/url.go:813
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420144000, 0x40, 0x10001, 0x0, 0xc4200cfee8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:14 +0x438
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420144000, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 495 [runnable]:
+syscall.Syscall(0x1, 0x1a, 0xc42058e000, 0xa0, 0xa0, 0xa0, 0x0)
+	/usr/local/go/src/syscall/asm_linux_amd64.s:18 +0x5
+syscall.write(0x1a, 0xc42058e000, 0xa0, 0x1000, 0xc420230f00, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_linux_amd64.go:1022 +0x5f
+syscall.Write(0x1a, 0xc42058e000, 0xa0, 0x1000, 0x2, 0x1, 0x7fa89edd8840)
+	/usr/local/go/src/syscall/syscall_unix.go:181 +0x49
+internal/poll.(*FD).Write(0xc4207be400, 0xc42058e000, 0xa0, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:256 +0x142
+net.(*netFD).Write(0xc4207be400, 0xc42058e000, 0xa0, 0x1000, 0x6, 0x5e, 0x42851e)
+	/usr/local/go/src/net/fd_unix.go:220 +0x4f
+net.(*conn).Write(0xc42020a788, 0xc42058e000, 0xa0, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:188 +0x6a
+net/http.persistConnWriter.Write(0xc4203abb00, 0xc42058e000, 0xa0, 0x1000, 0x5e, 0x1348814, 0x6)
+	/usr/local/go/src/net/http/transport.go:1253 +0x52
+bufio.(*Writer).Flush(0xc4206265c0, 0x1466b40, 0xc4206265c0)
+	/usr/local/go/src/bufio/bufio.go:573 +0x7e
+net/http.(*persistConn).writeLoop(0xc4203abb00)
+	/usr/local/go/src/net/http/transport.go:1838 +0x38d
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 451 [select]:
+io.(*pipe).Write(0xc420232c30, 0xc42078e808, 0x2000, 0x7801, 0x800, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:87 +0x1e3
+io.(*PipeWriter).Write(0xc420188430, 0xc42078e008, 0x2800, 0x8001, 0x2808, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:153 +0x4c
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x1468760, 0xc420188430, 0x1468760, 0xc420188458, 0x1466b20, 0xc4200887e0, 0x0, 0x0, 0xc4203d3ee8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:174 +0x3f1
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func3(0xc420188430, 0xc420188458, 0xc420122540)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:84 +0x70
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:82 +0x942
+
+goroutine 500 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9ace0, 0x72, 0xc4207269a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420140398, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420140398, 0xc42081e000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420140380, 0xc42081e000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420140380, 0xc42081e000, 0x1000, 0x1000, 0xc420726aa0, 0xf, 0x7fa89eddef80)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42000e3d0, 0xc42081e000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4202a2a20, 0xc42081e000, 0x1000, 0x1000, 0x404fa6, 0xc420726b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4208ae480)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4208ae480, 0x1, 0xc4208000c0, 0xc4207fb480, 0xc4207fb418, 0xc420829080, 0xc4207fb408)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4202a2a20)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a

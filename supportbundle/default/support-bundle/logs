@@ -1,0 +1,85 @@
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file reading /proc/cpuinfo in container
+DEBUG 2019/05/09 22:00:49 os.read-file reading /proc/meminfo in container
+DEBUG 2019/05/09 22:00:49 os.read-file reading /proc/mounts in container
+DEBUG 2019/05/09 22:00:49 os.read-file reading /proc/uptime in container
+DEBUG 2019/05/09 22:00:49 os.read-file reading /proc/version in container
+DEBUG 2019/05/09 22:00:49 os.read-file reading /proc/vmstat in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 journald.logs in container
+DEBUG 2019/05/09 22:00:49 journald.logs in container
+DEBUG 2019/05/09 22:00:49 spec for docker.container-logs aliased from docker.logs
+DEBUG 2019/05/09 22:00:49 spec for docker.container-logs aliased from docker.logs
+DEBUG 2019/05/09 22:00:49 Producer not defined for spec {SpecShared:{Description: OutputDir: TimeoutSeconds:0 Scrub:<nil> IncludeEmpty:false Meta:<nil> Defer:false} SupportBundleVersion:<nil> SupportBundleGoroutines:<nil> SupportBundleLogs:<nil> CustomerMeta:<nil> ChannelMeta:<nil> GlobalRedaction:<nil> CoreHostname:<nil> CoreHTTPRequest:<nil> CoreLoadavg:<nil> CoreReadFile:<nil> CoreRunCommand:<nil> CoreUptime:<nil> JournaldLogs:<nil> DockerContainerCp:<nil> DockerContainerExec:<nil> DockerContainerInspect:<nil> DockerContainerLogs:<nil> DockerContainerLs:<nil> DockerContainerRun:<nil> DockerExec:<nil> DockerImageLs:<nil> DockerImages:<nil> DockerInfo:<nil> DockerLogs:<nil> DockerNodeLs:<nil> DockerPs:<nil> DockerRun:<nil> DockerServiceLogs:<nil> DockerServiceLs:<nil> DockerServicePs:<nil> DockerStackServiceLogs:<nil> DockerStackServiceLs:<nil> DockerStackServicePs:<nil> DockerStackTaskLogs:<nil> DockerTaskLogs:<nil> DockerTaskLs:<nil> DockerVersion:<nil> KubernetesAPIVersions:<nil> KubernetesClusterInfo:<nil> KubernetesContainerCp:<nil> KubernetesLogs:<nil> KubernetesResourceList:0xc42023c280 KubernetesVersion:<nil> RetracedEvents:<nil>}
+DEBUG 2019/05/09 22:00:49 Producer not defined for spec {SpecShared:{Description: OutputDir: TimeoutSeconds:0 Scrub:<nil> IncludeEmpty:false Meta:<nil> Defer:false} SupportBundleVersion:<nil> SupportBundleGoroutines:<nil> SupportBundleLogs:<nil> CustomerMeta:<nil> ChannelMeta:<nil> GlobalRedaction:<nil> CoreHostname:<nil> CoreHTTPRequest:<nil> CoreLoadavg:<nil> CoreReadFile:<nil> CoreRunCommand:<nil> CoreUptime:<nil> JournaldLogs:<nil> DockerContainerCp:<nil> DockerContainerExec:<nil> DockerContainerInspect:<nil> DockerContainerLogs:<nil> DockerContainerLs:<nil> DockerContainerRun:<nil> DockerExec:<nil> DockerImageLs:<nil> DockerImages:<nil> DockerInfo:<nil> DockerLogs:<nil> DockerNodeLs:<nil> DockerPs:<nil> DockerRun:<nil> DockerServiceLogs:<nil> DockerServiceLs:<nil> DockerServicePs:<nil> DockerStackServiceLogs:<nil> DockerStackServiceLs:<nil> DockerStackServicePs:<nil> DockerStackTaskLogs:<nil> DockerTaskLogs:<nil> DockerTaskLs:<nil> DockerVersion:<nil> KubernetesAPIVersions:<nil> KubernetesClusterInfo:<nil> KubernetesContainerCp:<nil> KubernetesLogs:<nil> KubernetesResourceList:0xc42023c300 KubernetesVersion:<nil> RetracedEvents:<nil>}
+DEBUG 2019/05/09 22:00:49 Producer not defined for spec {SpecShared:{Description: OutputDir: TimeoutSeconds:0 Scrub:<nil> IncludeEmpty:false Meta:<nil> Defer:false} SupportBundleVersion:<nil> SupportBundleGoroutines:<nil> SupportBundleLogs:<nil> CustomerMeta:<nil> ChannelMeta:<nil> GlobalRedaction:<nil> CoreHostname:<nil> CoreHTTPRequest:<nil> CoreLoadavg:<nil> CoreReadFile:<nil> CoreRunCommand:<nil> CoreUptime:<nil> JournaldLogs:<nil> DockerContainerCp:<nil> DockerContainerExec:<nil> DockerContainerInspect:<nil> DockerContainerLogs:<nil> DockerContainerLs:<nil> DockerContainerRun:<nil> DockerExec:<nil> DockerImageLs:<nil> DockerImages:<nil> DockerInfo:<nil> DockerLogs:<nil> DockerNodeLs:<nil> DockerPs:<nil> DockerRun:<nil> DockerServiceLogs:<nil> DockerServiceLs:<nil> DockerServicePs:<nil> DockerStackServiceLogs:<nil> DockerStackServiceLs:<nil> DockerStackServicePs:<nil> DockerStackTaskLogs:<nil> DockerTaskLogs:<nil> DockerTaskLs:<nil> DockerVersion:<nil> KubernetesAPIVersions:<nil> KubernetesClusterInfo:<nil> KubernetesContainerCp:<nil> KubernetesLogs:<nil> KubernetesResourceList:0xc42023c380 KubernetesVersion:<nil> RetracedEvents:<nil>}
+DEBUG 2019/05/09 22:00:49 Producer not defined for spec {SpecShared:{Description: OutputDir: TimeoutSeconds:0 Scrub:<nil> IncludeEmpty:false Meta:<nil> Defer:false} SupportBundleVersion:<nil> SupportBundleGoroutines:<nil> SupportBundleLogs:<nil> CustomerMeta:<nil> ChannelMeta:<nil> GlobalRedaction:<nil> CoreHostname:<nil> CoreHTTPRequest:<nil> CoreLoadavg:<nil> CoreReadFile:<nil> CoreRunCommand:<nil> CoreUptime:<nil> JournaldLogs:<nil> DockerContainerCp:<nil> DockerContainerExec:<nil> DockerContainerInspect:<nil> DockerContainerLogs:<nil> DockerContainerLs:<nil> DockerContainerRun:<nil> DockerExec:<nil> DockerImageLs:<nil> DockerImages:<nil> DockerInfo:<nil> DockerLogs:<nil> DockerNodeLs:<nil> DockerPs:<nil> DockerRun:<nil> DockerServiceLogs:<nil> DockerServiceLs:<nil> DockerServicePs:<nil> DockerStackServiceLogs:<nil> DockerStackServiceLs:<nil> DockerStackServicePs:<nil> DockerStackTaskLogs:<nil> DockerTaskLogs:<nil> DockerTaskLs:<nil> DockerVersion:<nil> KubernetesAPIVersions:<nil> KubernetesClusterInfo:<nil> KubernetesContainerCp:<nil> KubernetesLogs:<nil> KubernetesResourceList:0xc42023c400 KubernetesVersion:<nil> RetracedEvents:<nil>}
+DEBUG 2019/05/09 22:00:49 spec for docker.container-logs aliased from docker.logs
+DEBUG 2019/05/09 22:00:50 Running tasks...
+DEBUG 2019/05/09 22:00:50 Making request to http://localhost:2379/metrics with method get
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"description":"iptables sysconfig settings","output_dir":"default/etc/sysconfig","filepath":"/etc/sysconfig/iptables"}} completed in 7.818366ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"docker.image-ls":{"output_dir":"default/docker","All":false,"Filters":null}} completed in 516.431µs
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/system-release"}} completed in 9.931848ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/proc","filepath":"/proc/mounts"}} completed in 9.89285ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/proc","filepath":"/proc/uptime"}} completed in 19.097455ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/ip_addr_show","name":"ip","args":["-o","addr","show"]}} completed in 20.820585ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/proc","filepath":"/proc/version"}} completed in 20.331972ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/proc","filepath":"/proc/cpuinfo"}} completed in 20.523247ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"description":"Support bundle version information","output_dir":"/","version":{}} completed in 21.378518ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.uptime":{"output_dir":"default/commands/uptime","template":""}} completed in 21.004584ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"docker.version":{"output_dir":"default/docker"}} completed in 208.679µs
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/proc","filepath":"/proc/vmstat"}} completed in 24.841859ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"docker.container-ls":{"output_dir":"default/docker","Quiet":false,"Size":false,"All":true,"Latest":false,"Since":"","Before":"","Limit":0,"Filters":null}} completed in 19.700029ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/df_inodes","name":"df","args":["-ali"]}} completed in 34.874136ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/ip_link_show","name":"ip","args":["-o","link","show"]}} completed in 34.885867ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/date","name":"date"}} completed in 35.083639ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.loadavg":{"output_dir":"default/commands/loadavg","template":""}} completed in 34.796108ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/proc","filepath":"/proc/meminfo"}} completed in 34.67856ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/ip_route_show","name":"ip","args":["-o","route","show"]}} completed in 35.180607ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.http-request":{"output_dir":"default/kubernetes/metrics/etcd","url":"http://localhost:2379/metrics","method":"get"}} completed in 57.45419ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/df","name":"df","args":["-al"]}} completed in 58.502163ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/dmesg","name":"dmesg"}} completed in 58.448497ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.hostname":{"output_dir":"default/commands/hostname"}} completed in 58.729015ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/ps","name":"ps","args":["fauxwww"]}} completed in 100.368694ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"docker.info":{"output_dir":"default/docker"}} completed in 26.185747ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/free","name":"free","args":["-m"]}} completed in 102.411517ms
+DEBUG 2019/05/09 22:00:52 Task with spec {"os.read-file":{"description":"iptables sysconfig settings","output_dir":"default/etc/sysconfig","filepath":"/etc/sysconfig/ip6tables"}} completed in 2.348550423s
+DEBUG 2019/05/09 22:00:52 Task with spec {"os.read-file":{"description":"iptables sysconfig settings","output_dir":"default/etc/sysconfig","filepath":"/etc/sysconfig/iptables-config"}} completed in 2.97127704s
+DEBUG 2019/05/09 22:00:53 Task with spec {"os.read-file":{"description":"dnsmasq.conf","output_dir":"default/etc","filepath":"/etc/dnsmasq.conf"}} completed in 3.606207428s
+DEBUG 2019/05/09 22:00:53 Task with spec {"os.read-file":{"description":"docker daemon json","output_dir":"default/etc/docker","filepath":"/etc/docker/daemon.json"}} completed in 3.924204238s
+DEBUG 2019/05/09 22:00:54 Task with spec {"os.read-file":{"description":"DNS resolv.conf","output_dir":"default/etc","filepath":"/etc/resolv.conf"}} completed in 4.391588556s
+DEBUG 2019/05/09 22:00:54 Task with spec {"os.read-file":{"description":"firewalld settings","output_dir":"default/etc","filepath":"/etc/firewalld"}} completed in 4.9916504s
+DEBUG 2019/05/09 22:00:55 Task with spec {"os.read-file":{"description":"dhcp3 dhclient.conf","output_dir":"default/etc/dhcp3","filepath":"/etc/dhcp3/dhclient.conf"}} completed in 5.188075356s
+DEBUG 2019/05/09 22:00:55 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/centos-release"}} completed in 5.21201319s
+DEBUG 2019/05/09 22:00:56 Task with spec {"os.read-file":{"output_dir":"default/etc/sysconfig","filepath":"/etc/sysconfig/docker"}} completed in 6.568213118s
+DEBUG 2019/05/09 22:00:57 Task with spec {"os.read-file":{"description":"firewalld settings","output_dir":"default/usr/lib","filepath":"/usr/lib/FirewallD"}} completed in 7.186731774s
+DEBUG 2019/05/09 22:00:58 Task with spec {"os.read-file":{"output_dir":"default/etc/systemd/system/docker.service.d","filepath":"/etc/systemd/system/docker.service.d/http-proxy.conf"}} completed in 8.566598659s
+DEBUG 2019/05/09 22:00:58 Task with spec {"os.read-file":{"output_dir":"default/var/log/upstart","filepath":"/var/log/upstart/docker.log"}} completed in 8.72678317s
+DEBUG 2019/05/09 22:00:58 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/timezone"}} completed in 8.938387556s
+DEBUG 2019/05/09 22:00:59 Task with spec {"journald.logs":{"output_dir":"default/journald/docker","unit":"docker","since":"-14 days"}} completed in 9.454389676s
+DEBUG 2019/05/09 22:00:59 Task with spec {"os.read-file":{"output_dir":"default/etc/default","filepath":"/etc/default/docker"}} completed in 9.457851902s
+DEBUG 2019/05/09 22:00:59 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/fstab"}} completed in 9.566291982s
+DEBUG 2019/05/09 22:01:00 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/hostname"}} completed in 10.393727011s
+DEBUG 2019/05/09 22:01:00 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/os-release"}} completed in 10.850190651s
+DEBUG 2019/05/09 22:01:01 Task with spec {"journald.logs":{"output_dir":"default/kubernetes/kubelet/logs","unit":"kubelet","reverse":true}} completed in 11.246990783s
+DEBUG 2019/05/09 22:01:01 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/hosts"}} completed in 11.653106094s
+DEBUG 2019/05/09 22:01:01 Running tasks complete
+DEBUG 2019/05/09 22:01:01 Running deferred tasks...

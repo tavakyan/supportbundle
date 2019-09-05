@@ -1,0 +1,134 @@
+{
+  "Architecture": "x86_64",
+  "BridgeNfIp6tables": true,
+  "BridgeNfIptables": true,
+  "CPUSet": true,
+  "CPUShares": true,
+  "CgroupDriver": "cgroupfs",
+  "ClusterAdvertise": "",
+  "ClusterStore": "",
+  "ContainerdCommit": {
+    "Expected": "bb71b10fd8f58240ca47fbb579b9d1028eea7c84",
+    "ID": "bb71b10fd8f58240ca47fbb579b9d1028eea7c84"
+  },
+  "Containers": 1,
+  "ContainersPaused": 0,
+  "ContainersRunning": 1,
+  "ContainersStopped": 0,
+  "CpuCfsPeriod": true,
+  "CpuCfsQuota": true,
+  "Debug": false,
+  "DefaultRuntime": "runc",
+  "DockerRootDir": "/var/lib/docker",
+  "Driver": "overlay2",
+  "DriverStatus": [
+    [
+      "Backing Filesystem",
+      "extfs"
+    ],
+    [
+      "Supports d_type",
+      "true"
+    ],
+    [
+      "Native Overlay Diff",
+      "true"
+    ]
+  ],
+  "ExperimentalBuild": false,
+  "GenericResources": null,
+  "HttpProxy": "",
+  "HttpsProxy": "",
+  "ID": "TNOE:IDBR:V54O:VKOL:KUXU:AXIP:S632:4FYT:CDBW:KZ4L:23VP:LBCP",
+  "IPv4Forwarding": true,
+  "Images": 1,
+  "IndexServerAddress": "https://index.docker.io/v1/",
+  "InitBinary": "docker-init",
+  "InitCommit": {
+    "Expected": "fec3683",
+    "ID": "fec3683"
+  },
+  "Isolation": "",
+  "KernelMemory": true,
+  "KernelVersion": "4.15.0-1030-gcp",
+  "Labels": [],
+  "LiveRestoreEnabled": false,
+  "LoggingDriver": "json-file",
+  "MemTotal": 15762866176,
+  "MemoryLimit": true,
+  "NCPU": 4,
+  "NEventsListener": 0,
+  "NFd": 32,
+  "NGoroutines": 55,
+  "Name": "ethan-1",
+  "NoProxy": "",
+  "OSType": "linux",
+  "OomKillDisable": true,
+  "OperatingSystem": "Ubuntu 18.04.2 LTS",
+  "Plugins": {
+    "Authorization": null,
+    "Log": [
+      "awslogs",
+      "fluentd",
+      "gcplogs",
+      "gelf",
+      "journald",
+      "json-file",
+      "local",
+      "logentries",
+      "splunk",
+      "syslog"
+    ],
+    "Network": [
+      "bridge",
+      "host",
+      "macvlan",
+      "null",
+      "overlay"
+    ],
+    "Volume": [
+      "local"
+    ]
+  },
+  "RegistryConfig": {
+    "AllowNondistributableArtifactsCIDRs": [],
+    "AllowNondistributableArtifactsHostnames": [],
+    "IndexConfigs": {
+      "docker.io": {
+        "Mirrors": [],
+        "Name": "docker.io",
+        "Official": true,
+        "Secure": true
+      }
+    },
+    "InsecureRegistryCIDRs": [
+      "127.0.0.0/8"
+    ],
+    "Mirrors": []
+  },
+  "RuncCommit": {
+    "Expected": "2b18fe1d885ee5083ef9f0838fee39b62d653e30",
+    "ID": "2b18fe1d885ee5083ef9f0838fee39b62d653e30"
+  },
+  "Runtimes": {
+    "runc": {
+      "path": "runc"
+    }
+  },
+  "SecurityOptions": [
+    "name=apparmor",
+    "name=seccomp,profile=default"
+  ],
+  "ServerVersion": "18.09.6",
+  "SwapLimit": false,
+  "Swarm": {
+    "ControlAvailable": false,
+    "Error": "",
+    "LocalNodeState": "inactive",
+    "NodeAddr": "",
+    "NodeID": "",
+    "RemoteManagers": null
+  },
+  "SystemStatus": null,
+  "SystemTime": "2019-05-09T22:00:50.004961757Z"
+}

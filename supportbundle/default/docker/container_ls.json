@@ -1,0 +1,58 @@
+[
+  {
+    "Command": "support-bundle generate --no-upload",
+    "Created": 1557439249,
+    "HostConfig": {
+      "NetworkMode": "host"
+    },
+    "Id": "0a157d3ed6717e994ff891da90de36f8b1a662aa48461cea57b266daf73fe80d",
+    "Image": "replicated/support-bundle",
+    "ImageID": "sha256:1602dde299a70e3079768b0044667632186372adad55b15bba507f71ecbbb4ca",
+    "Labels": {
+      "com.replicated.support-bundle": "true"
+    },
+    "Mounts": [
+      {
+        "Destination": "/out",
+        "Mode": "",
+        "Propagation": "rprivate",
+        "RW": true,
+        "Source": "/home/ethan",
+        "Type": "bind"
+      },
+      {
+        "Destination": "/var/run/docker.sock",
+        "Mode": "",
+        "Propagation": "rprivate",
+        "RW": true,
+        "Source": "/var/run/docker.sock",
+        "Type": "bind"
+      }
+    ],
+    "Names": [
+      "/support-bundle"
+    ],
+    "NetworkSettings": {
+      "Networks": {
+        "host": {
+          "Aliases": null,
+          "DriverOpts": null,
+          "EndpointID": "",
+          "Gateway": "",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "IPAMConfig": null,
+          "IPAddress": "",
+          "IPPrefixLen": 0,
+          "IPv6Gateway": "",
+          "Links": null,
+          "MacAddress": "",
+          "NetworkID": ""
+        }
+      }
+    },
+    "Ports": [],
+    "State": "created",
+    "Status": "Created"
+  }
+]

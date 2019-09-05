@@ -1,0 +1,20 @@
+[
+  {
+    "Containers": -1,
+    "Created": 1557336715,
+    "Id": "sha256:1602dde299a70e3079768b0044667632186372adad55b15bba507f71ecbbb4ca",
+    "Labels": {
+      "com.replicated.support-bundle": "true"
+    },
+    "ParentId": "",
+    "RepoDigests": [
+      "replicated/support-bundle@sha256:4ca13b02684c7ceb0caabc23e7a342f877e2b8359826987bcc42511bcc784317"
+    ],
+    "RepoTags": [
+      "replicated/support-bundle:latest"
+    ],
+    "SharedSize": -1,
+    "Size": 373238528,
+    "VirtualSize": 373238528
+  }
+]

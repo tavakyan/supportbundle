@@ -1,0 +1,268 @@
+[
+  {
+    "path": "",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "docker.stack-service-logs": {
+        "description": "Logs from services in the replicated stack",
+        "output_dir": "default/replicated/swarm/replicated/service-logs",
+        "namespace": "replicated"
+      }
+    },
+    "error": "failed to list services: Error response from daemon: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+  },
+  {
+    "path": "",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "docker.stack-service-logs": {
+        "description": "Logs from services in the retraced stack",
+        "output_dir": "default/replicated/swarm/replicated-retraced/logs",
+        "namespace": "replicated-retraced"
+      }
+    },
+    "error": "failed to list services: Error response from daemon: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+  },
+  {
+    "path": "",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "docker.stack-service-logs": {
+        "description": "Logs from services in the premkit stack",
+        "output_dir": "default/replicated/swarm/replicated-premkit/logs",
+        "namespace": "replicated-premkit"
+      }
+    },
+    "error": "failed to list services: Error response from daemon: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+  },
+  {
+    "path": "",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "docker.stack-service-logs": {
+        "description": "Logs from services in the statsd stack",
+        "output_dir": "default/replicated/swarm/replicated-statsd/logs",
+        "namespace": "replicated-statsd"
+      }
+    },
+    "error": "failed to list services: Error response from daemon: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+  },
+  {
+    "path": "default/etc/sysconfig",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "iptables sysconfig settings",
+        "output_dir": "default/etc/sysconfig",
+        "filepath": "/etc/sysconfig/iptables"
+      }
+    },
+    "error": "this container: not found"
+  },
+  {
+    "path": "default/etc",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc",
+        "filepath": "/etc/system-release"
+      }
+    },
+    "error": "this container: not found"
+  },
+  {
+    "path": "default/kubernetes/metrics/etcd",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.http-request": {
+        "output_dir": "default/kubernetes/metrics/etcd",
+        "url": "http://localhost:2379/metrics",
+        "method": "get"
+      }
+    },
+    "error": "make request: Get http://localhost:2379/metrics: dial tcp 127.0.0.1:2379: connect: connection refused"
+  },
+  {
+    "path": "default/commands/dmesg/stderr",
+    "format": "",
+    "size": 58,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/dmesg",
+        "name": "dmesg"
+      }
+    },
+    "error": "exit status 1"
+  },
+  {
+    "path": "default/commands/dmesg/stdout",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/dmesg",
+        "name": "dmesg"
+      }
+    },
+    "error": "exit status 1"
+  },
+  {
+    "path": "default/etc/sysconfig",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "iptables sysconfig settings",
+        "output_dir": "default/etc/sysconfig",
+        "filepath": "/etc/sysconfig/ip6tables"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc/sysconfig",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "iptables sysconfig settings",
+        "output_dir": "default/etc/sysconfig",
+        "filepath": "/etc/sysconfig/iptables-config"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "dnsmasq.conf",
+        "output_dir": "default/etc",
+        "filepath": "/etc/dnsmasq.conf"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc/docker",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "docker daemon json",
+        "output_dir": "default/etc/docker",
+        "filepath": "/etc/docker/daemon.json"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "DNS resolv.conf",
+        "output_dir": "default/etc",
+        "filepath": "/etc/resolv.conf"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "firewalld settings",
+        "output_dir": "default/etc",
+        "filepath": "/etc/firewalld"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc/dhcp3",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "dhcp3 dhclient.conf",
+        "output_dir": "default/etc/dhcp3",
+        "filepath": "/etc/dhcp3/dhclient.conf"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc",
+        "filepath": "/etc/centos-release"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc/sysconfig",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc/sysconfig",
+        "filepath": "/etc/sysconfig/docker"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/usr/lib",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "firewalld settings",
+        "output_dir": "default/usr/lib",
+        "filepath": "/usr/lib/FirewallD"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc/systemd/system/docker.service.d",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc/systemd/system/docker.service.d",
+        "filepath": "/etc/systemd/system/docker.service.d/http-proxy.conf"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/var/log/upstart",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/var/log/upstart",
+        "filepath": "/var/log/upstart/docker.log"
+      }
+    },
+    "error": "docker read file: file not found"
+  }
+]

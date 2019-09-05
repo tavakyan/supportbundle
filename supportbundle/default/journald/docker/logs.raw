@@ -1,0 +1,61 @@
+-- Logs begin at Thu 2019-05-09 21:49:51 UTC, end at Thu 2019-05-09 22:00:59 UTC. --
+May 09 21:58:46 ethan-1 systemd[1]: Starting Docker Application Container Engine...
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.214197631Z" level=info msg="systemd-resolved is running, so using resolvconf: /run/systemd/resolve/resolv.conf"
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253433008Z" level=info msg="parsed scheme: \"unix\"" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253484273Z" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253618550Z" level=info msg="parsed scheme: \"unix\"" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253628034Z" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253809041Z" level=info msg="ccResolverWrapper: sending new addresses to cc: [{unix:///run/containerd/containerd.sock 0  <nil>}]" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253871594Z" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253919618Z" level=info msg="ccResolverWrapper: sending new addresses to cc: [{unix:///run/containerd/containerd.sock 0  <nil>}]" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253963549Z" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.254068742Z" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc4207b3330, CONNECTING" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253945542Z" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc42075d120, CONNECTING" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.254310389Z" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc4207b3330, READY" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.254993404Z" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc42075d120, READY" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.327252943Z" level=info msg="Graph migration to content-addressability took 0.00 seconds"
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.327672587Z" level=warning msg="Your kernel does not support swap memory limit"
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.327748386Z" level=warning msg="Your kernel does not support cgroup rt period"
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.327758846Z" level=warning msg="Your kernel does not support cgroup rt runtime"
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.328490324Z" level=info msg="Loading containers: start."
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.631785716Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.874284586Z" level=info msg="Loading containers: done."
+May 09 21:58:48 ethan-1 dockerd[4670]: time="2019-05-09T21:58:48.231430142Z" level=info msg="Docker daemon" commit=481bc77 graphdriver(s)=overlay2 version=18.09.6
+May 09 21:58:48 ethan-1 dockerd[4670]: time="2019-05-09T21:58:48.231814429Z" level=info msg="Daemon has completed initialization"
+May 09 21:58:48 ethan-1 dockerd[4670]: time="2019-05-09T21:58:48.277079515Z" level=info msg="API listen on /var/run/docker.sock"
+May 09 21:58:48 ethan-1 systemd[1]: Started Docker Application Container Engine.
+May 09 22:00:25 ethan-1 dockerd[4670]: time="2019-05-09T22:00:25.987565676Z" level=error msg="Handler for POST /v1.39/containers/4e577094b69d66aba40adaba254ff30ef0269efb1b83ebf03928e0e6f3e7426f/resize returned error: bad file descriptor: unknown"
+May 09 22:00:25 ethan-1 dockerd[4670]: time="2019-05-09T22:00:25.999762838Z" level=error msg="Handler for POST /v1.39/containers/4e577094b69d66aba40adaba254ff30ef0269efb1b83ebf03928e0e6f3e7426f/resize returned error: bad file descriptor: unknown"
+May 09 22:00:26 ethan-1 dockerd[4670]: time="2019-05-09T22:00:26.011944043Z" level=error msg="Handler for POST /v1.39/containers/4e577094b69d66aba40adaba254ff30ef0269efb1b83ebf03928e0e6f3e7426f/resize returned error: bad file descriptor: unknown"
+May 09 22:00:26 ethan-1 dockerd[4670]: time="2019-05-09T22:00:26.068291385Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.000948663Z" level=error msg="Error getting services: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.001020329Z" level=error msg="Handler for GET /v1.35/services returned error: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.001767325Z" level=error msg="Error getting services: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.001836574Z" level=error msg="Handler for GET /v1.35/services returned error: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.002471681Z" level=error msg="Error getting services: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.002517253Z" level=error msg="Handler for GET /v1.35/services returned error: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.003104199Z" level=error msg="Error getting services: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.003141957Z" level=error msg="Handler for GET /v1.35/services returned error: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:51 ethan-1 dockerd[4670]: time="2019-05-09T22:00:51.482626999Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:52 ethan-1 dockerd[4670]: time="2019-05-09T22:00:52.243012359Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:52 ethan-1 dockerd[4670]: time="2019-05-09T22:00:52.417182961Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:52 ethan-1 dockerd[4670]: time="2019-05-09T22:00:52.908075010Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:52 ethan-1 dockerd[4670]: time="2019-05-09T22:00:52.985843886Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:53 ethan-1 dockerd[4670]: time="2019-05-09T22:00:53.007207444Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:53 ethan-1 dockerd[4670]: time="2019-05-09T22:00:53.388051321Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:53 ethan-1 dockerd[4670]: time="2019-05-09T22:00:53.455035651Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:53 ethan-1 dockerd[4670]: time="2019-05-09T22:00:53.455095887Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:53 ethan-1 dockerd[4670]: time="2019-05-09T22:00:53.609105545Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:53 ethan-1 dockerd[4670]: time="2019-05-09T22:00:53.826319848Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:54 ethan-1 dockerd[4670]: time="2019-05-09T22:00:54.282251542Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:55 ethan-1 dockerd[4670]: time="2019-05-09T22:00:55.194607959Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:55 ethan-1 dockerd[4670]: time="2019-05-09T22:00:55.954662683Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:56 ethan-1 dockerd[4670]: time="2019-05-09T22:00:56.251640457Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:56 ethan-1 dockerd[4670]: time="2019-05-09T22:00:56.377211622Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:57 ethan-1 dockerd[4670]: time="2019-05-09T22:00:57.233161801Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:57 ethan-1 dockerd[4670]: time="2019-05-09T22:00:57.370505581Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:57 ethan-1 dockerd[4670]: time="2019-05-09T22:00:57.423852362Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:57 ethan-1 dockerd[4670]: time="2019-05-09T22:00:57.425619786Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:58 ethan-1 dockerd[4670]: time="2019-05-09T22:00:58.038842204Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:58 ethan-1 dockerd[4670]: time="2019-05-09T22:00:58.523820360Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:58 ethan-1 dockerd[4670]: time="2019-05-09T22:00:58.609918370Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
