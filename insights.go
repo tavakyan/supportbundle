@@ -2,35 +2,54 @@ package supportbundle
 
 import (
 	"fmt"
+	"strconv"
 	"time"
 )
 
 func (sb SupportBundle) getOS() string {
-	return "in proc/version"
+	return sb.Proc.OS.Name
 }
 
 func (sb SupportBundle) getOSVersion() string {
-	return "in proc/version"
+	return sb.Proc.OS.Version
 }
 
 func (sb SupportBundle) getNumCores() string {
-	return "in proc/cpuinfo get cpu cores field"
+	return sb.Proc.CpuInfo.CpuCores
 }
 
+// getLoadAverage returns the 15 minute cpu load time
+// which is the 3rd field in the Load avg command
 func (sb SupportBundle) getLoadAverage(d time.Duration) string {
-	return "3rd field from commands/loadavg/loadavg"
+	return sb.Commands.LoadAvg[2]
 }
 
+// getDiskUsage returns the difference between
+// total & available memory
 func (sb SupportBundle) getDiskUsage() string {
-	return "default/proc/meminfo MemTotal - MemAvailable"
+	memTotal := sb.Proc.MemInfo.MemTotal
+	memAvail := sb.Proc.MemInfo.MemAvailable
+
+	memTotalInt, err := strconv.Atoi(memTotal)
+	if err != nil {
+		return ""
+	}
+
+	memTotalAvailInt, err := strconv.Atoi(memAvail)
+	if err != nil {
+		return ""
+	}
+
+	memUsage := memTotalInt - memTotalAvailInt
+	return strconv.Itoa(memUsage)
 }
 
 func (sb SupportBundle) getDockerVersion() string {
-	return "get from docker_version.json"
+	return sb.Docker.DockerVersion.Version
 }
 
 func (sb SupportBundle) getDockerStorageDriver() string {
-	return "gete from docker_info.json"
+	return sb.Docker.DockerInfo.Driver
 }
 
 // Print insights from bundle

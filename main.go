@@ -5,11 +5,7 @@ import (
 	"os"
 )
 
-type SupportBundle struct {
-}
-
 func main() {
-
 	// Don't execute if we don't have correct number of arguments
 	if len(os.Args) != 2 {
 		fmt.Printf("Failed to execute: Invalid number of arguments %v\n", len(os.Args))
@@ -25,7 +21,7 @@ func main() {
 		return
 	}
 
-	// Unmarshal the path into struct
+	// Unmarshal the path into support bundle struct
 	supportBundle := SupportBundle{}
 	err = supportBundle.UnmarshalBundle(extractedPath)
 	if err != nil {
