@@ -16,7 +16,7 @@ type LoadAvg struct {
 // Converts file containing:
 // 0.26 0.14 0.05 5/233 5186
 // to LoadAvg structure, error otherwise
-func (avg LoadAvg) unmarshal(path string) error {
+func (avg *LoadAvg) unmarshal(path string) error {
 
 	// Set path to LoadAvg command
 	// an load file from that path

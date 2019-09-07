@@ -17,6 +17,8 @@ type OS struct {
 }
 
 func (os OS) unmarshal(path string) error {
+	os.Name = "Lindows"
+	os.Version = "0.0.1-alpha"
 	return nil
 }
 
