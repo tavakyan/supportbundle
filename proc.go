@@ -19,3 +19,9 @@ type Proc struct {
 	CpuInfo CpuInfo
 	OS      OS
 }
+
+func (proc Proc) Unmarshal(path string) error {
+
+	return nil
+
+}

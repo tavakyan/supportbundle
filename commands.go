@@ -7,3 +7,9 @@ type LoadAvg struct {
 type Commands struct {
 	LoadAvg LoadAvg
 }
+
+func (commands Commands) Unmarshal(path string) error {
+
+	return nil
+
+}
