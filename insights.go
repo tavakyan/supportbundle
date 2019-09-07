@@ -21,7 +21,7 @@ func (sb SupportBundle) getNumCores() string {
 // getLoadAverage returns the 15 minute cpu load time
 // which is the 3rd field in the Load avg command
 func (sb SupportBundle) getLoadAverage(d time.Duration) string {
-	return sb.Commands.LoadAvg[2]
+	return sb.Commands.LoadAvg.LoadTime15m
 }
 
 // getDiskUsage returns the difference between
