@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/tavakyan/supportbundle/supportbundle"
+	"os"
 )
 
 func main() {
@@ -14,15 +15,16 @@ func main() {
 	//	return
 	//}
 	//
-	// We assume the argument in index 1 is the path to the bundle archive
-	//filePath := os.Args[1]
+	//We assume the argument in index 1 is the path to the bundle archive
+	filePath := os.Args[1]
 	//
 	//extractedPath, err := supportbundle.ExtractBundle(filePath)
 	//if err != nil {
 	//	fmt.Printf("Failed to extract %v:", err.Error())
 	//	return
 	//}
-	extractedPath := "/Users/tavakyan/go/src/github.com/tavakyan/supportbundle/supportbundle_ex/default"
+
+	extractedPath := filePath
 
 	// unmarshal the path into support bundle struct
 	supportBundle := supportbundle.SupportBundle{}

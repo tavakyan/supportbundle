@@ -16,7 +16,8 @@ type OS struct {
 	Version string
 }
 
-func (os OS) unmarshal(path string) error {
+// TODO: impl
+func (os *OS) unmarshal(path string) error {
 	os.Name = "Lindows"
 	os.Version = "0.0.1-alpha"
 	return nil
@@ -27,7 +28,7 @@ type MemInfo struct {
 	MemAvailable string
 }
 
-func (memInfo MemInfo) unmarshal(path string) error {
+func (memInfo *MemInfo) unmarshal(path string) error {
 
 	p := path + MemInfoPath
 	f, err := os.Open(p)
@@ -41,7 +42,7 @@ func (memInfo MemInfo) unmarshal(path string) error {
 	reader := bufio.NewReader(f)
 
 	var line string
-	var parsed map[string]string
+	parsed := make(map[string]string)
 
 	for {
 		line, err = reader.ReadString('\n')
@@ -59,8 +60,8 @@ func (memInfo MemInfo) unmarshal(path string) error {
 		parsed[k] = v
 	}
 
-	memInfo.MemAvailable = parsed["MemAvailable"]
-	memInfo.MemTotal = parsed["MemTotal"]
+	memInfo.MemAvailable = strings.TrimSpace(parsed["MemAvailable"])
+	memInfo.MemTotal = strings.TrimSpace(parsed["MemTotal"])
 
 	return nil
 }
@@ -69,7 +70,8 @@ type CpuInfo struct {
 	CpuCores string
 }
 
-func (ci CpuInfo) unmarshal(path string) error {
+// TODO: impl
+func (ci *CpuInfo) unmarshal(path string) error {
 	return nil
 }
 
@@ -79,7 +81,7 @@ type Proc struct {
 	OS      OS
 }
 
-func (proc Proc) Unmarshal(path string) (err error) {
+func (proc *Proc) Unmarshal(path string) (err error) {
 
 	err = proc.MemInfo.unmarshal(path + ProcPath)
 	if err != nil {

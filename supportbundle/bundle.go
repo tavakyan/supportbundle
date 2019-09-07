@@ -11,6 +11,8 @@ type SupportBundle struct {
 // contents to a SupportBundle, and returns an error if it fails.
 func (sb *SupportBundle) UnmarshalBundle(path string) (err error) {
 
+	path += "/default"
+
 	// unmarshal Commands
 	err = sb.Commands.Unmarshal(path)
 	if err != nil {

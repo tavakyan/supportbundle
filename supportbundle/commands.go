@@ -45,7 +45,7 @@ type Commands struct {
 	LoadAvg LoadAvg
 }
 
-func (commands Commands) Unmarshal(path string) (err error) {
+func (commands *Commands) Unmarshal(path string) (err error) {
 
 	err = commands.LoadAvg.unmarshal(path + CommandPath)
 	if err != nil {

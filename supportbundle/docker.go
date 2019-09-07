@@ -13,7 +13,7 @@ type DockerVersion struct {
 	Version string
 }
 
-func (dv DockerVersion) unmarshal(path string) error {
+func (dv *DockerVersion) unmarshal(path string) error {
 
 	// Set path to LoadAvg command
 	// an load file from that path
@@ -35,7 +35,7 @@ type DockerInfo struct {
 	Driver string
 }
 
-func (di DockerInfo) unmarshal(path string) error {
+func (di *DockerInfo) unmarshal(path string) error {
 	// Set path to LoadAvg command
 	// an load file from that path
 	p := path + DockerInfoPath
@@ -57,7 +57,7 @@ type Docker struct {
 	DockerInfo    DockerInfo
 }
 
-func (docker Docker) Unmarshal(path string) (err error) {
+func (docker *Docker) Unmarshal(path string) (err error) {
 
 	err = docker.DockerVersion.unmarshal(path + DockerPath)
 	if err != nil {
